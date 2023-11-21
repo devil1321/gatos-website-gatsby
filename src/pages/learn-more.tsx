@@ -1,10 +1,16 @@
 import React from 'react'
+import { GlobalComponents } from '../components/global'
+import { LearnMoreComponents } from '../components/learn-more'
 
 const LearnMore = () => {
   return (
-    <div>
-      learn more
-    </div>
+    <GlobalComponents.Layout className=''>
+      <main>
+        <LearnMoreComponents.Hero />
+        <LearnMoreComponents.AboutComponents.About />
+        <LearnMoreComponents.Founder />
+      </main>
+    </GlobalComponents.Layout>
   )
 }
 
