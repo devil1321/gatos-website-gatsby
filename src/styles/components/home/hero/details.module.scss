@@ -1,0 +1,17 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.details{
+    h1{
+        width: 100%;
+        font-size: 60px;
+        margin:20px 0px;
+    }
+    p{
+        width: 70%;
+    }
+    button{
+        @include button();
+    }
+}

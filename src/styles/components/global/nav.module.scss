@@ -1,0 +1,24 @@
+@import '../../fonts';
+@import '../../variables';
+@import '../../mixins';
+
+.nav{
+    padding:20px 0px;
+    position: relative;
+    top:0px;
+    left:0px;
+    a{
+        margin:0px 10px;
+    }
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width: 30px;
+    img{
+        width: 100%;
+    }
+}

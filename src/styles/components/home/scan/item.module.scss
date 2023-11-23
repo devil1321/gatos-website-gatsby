@@ -1,0 +1,49 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.item{
+    margin-top: 100px;
+    position: relative;
+    top:0px;
+    left:0px;
+    @include flex(row,space-between,flex-start,null);
+    h2{
+        font-weight: $f-normal;
+        font-size: 60px;
+        margin:100px 0px 10px 150px;
+    }
+    p{
+        margin: 0px;
+        margin-left:150px;
+
+    }
+}
+
+.details{
+    position: relative;
+    top:0px;
+    left:0px;
+    z-index: 2;
+}
+
+.image{
+    position: relative;
+    right:10%;
+    top:0px;
+    width:20%;
+    img{
+        width: 100%;
+    }
+}
+
+.text_background{
+    position: absolute; 
+    top:5%;
+    left:12%;
+    z-index: 2;
+    font-weight: $f-bold !important;
+    transform: rotate(90deg);
+    font-size: 150px !important;
+    color:$light-white;
+}

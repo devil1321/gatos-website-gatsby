@@ -1,0 +1,15 @@
+@import '../fonts';
+@import '../variables';
+@import '../mixins';
+
+.home{
+    padding:0px 70px;
+}
+
+.scan{
+    margin-top: 150px;
+    h3{
+        color:$light-white;
+    }
+    
+}

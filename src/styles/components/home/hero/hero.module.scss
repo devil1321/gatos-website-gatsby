@@ -1,0 +1,11 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.hero{
+    margin-top:50px;
+    @include flex(row,space-between,center,null);
+    div{
+        width:50%;
+    }
+}

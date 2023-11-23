@@ -1,4 +1,44 @@
+@import './normalize';
 @import './fonts';
 @import './variables';
 @import './mixins';
-@import './global';
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+body{
+    overflow-x: hidden;
+}
+.main-container{
+    background-color: $black;
+    font-family: $f-mulish;
+    font-weight: $f-normal;
+    min-height: 1000vh;
+    min-width: 100vw;
+    color:white;
+    overflow-x: hidden;
+}
+
+.home__hero-word{
+    display: inline-block;
+    margin-right: 10px;
+}
+.home__scan-item-letter,
+.home__hero-letter,
+.home__card-item-letter{
+    display: inline-block;
+    position: relative;
+    margin-right: 1px;
+}
+.home__scan-item{
+    &:nth-of-type(2){
+        .home__text-background{
+                left:17% !important;
+        }
+    }
+}

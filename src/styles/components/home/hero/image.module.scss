@@ -1,0 +1,46 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.image{
+    position: relative;
+    left:12%;
+    top:0px;
+}
+
+.svg{
+    position: absolute;
+    top:5%;
+    left:-7.5%;
+}
+
+.item{
+    position: relative;
+    z-index: 2;
+    top:0px;
+    left:0px;
+    width: 250px !important;
+    padding:0px 5px;
+    color:black;
+    background-color: white;
+    border-radius: 10px;
+    @include flex(row,flex-start,center,null);
+    div:first-of-type{
+        width: 40px;
+    }
+    img{
+        width: 100%;
+    }
+    p{
+        min-width: fit-content;
+        margin:5px 0px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
+
+.details{
+    padding:5px;
+    min-width: 80%;
+}
