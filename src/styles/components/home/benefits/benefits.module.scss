@@ -1,0 +1,26 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.benefits{
+    margin-top: 100px;
+    position: relative;
+    top:0px;
+    left:0px;
+    @include flex(row,center,flex-start,null);
+    & > h2{
+        position: absolute;
+        top:17%;
+        left:-20%;
+        transform: rotate(90deg);
+        font-size: 150px;
+        color: $light-white;
+    }
+}
+
+.column{
+    width: 30%;
+    &:first-of-type{
+        transform: translateY(50px);
+    }
+}

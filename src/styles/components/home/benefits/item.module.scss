@@ -1,0 +1,18 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+
+.item{
+    position: relative;
+    top:0px;
+    left:0px;
+    margin:0px 20px 20px;
+    h2{
+        position: absolute;
+        bottom:0px;
+        left:20px;
+        font-weight: $f-normal;
+    }
+}
+

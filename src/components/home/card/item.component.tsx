@@ -16,9 +16,6 @@ const Item = () => {
 
   const handleAnimate = () =>{
     gsap.registerPlugin(ScrollTrigger)
-
-
-
     gsap.fromTo('.home__card-item',{ x:-1000,opacity:0 },{
       x:0,
       opacity:1,

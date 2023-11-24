@@ -1,0 +1,15 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.details{
+    margin-top: 100px;
+    margin-left: 100px;
+    width: 50%;
+    h2,p{
+        margin:10px 0px;
+    }
+    p{
+        width: 50%;
+    }
+}

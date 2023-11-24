@@ -1,0 +1,38 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.feature{
+    width: 50%;
+    position: relative;
+    top:0px;
+    left:0px;
+}
+
+.svg{
+    position: absolute;
+    z-index: 2;
+    top:0px;
+    left: 0px;
+    transform: rotate(90deg) translateX(-28%) rotateY(110deg) translateY(46.5%);
+
+}
+
+.main_item{
+    position: relative;
+    z-index: 2;
+    top:0px;
+    left:0px;
+    width: 50%;
+    margin:0px auto;
+    img{
+        width: 100%;
+    }
+}
+
+.item{
+    width: 80px;
+    img{
+        width: 100%;
+    }
+}

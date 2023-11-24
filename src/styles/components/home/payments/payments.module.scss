@@ -1,0 +1,16 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.payments{
+    margin-top: 200px;
+    @include flex(row,center,flex-start,null);
+    & > h2{
+        position: absolute;
+        top:17%;
+        left:-20%;
+        transform: rotate(90deg);
+        font-size: 150px;
+        color: $light-white;
+    }
+}
