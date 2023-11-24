@@ -22,7 +22,8 @@ const Item = () => {
       scrollTrigger:{
         scrub:3,
         trigger:'.home__card-details',
-        start:'300px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__card-details h2',{ x:500,opacity:0 },{
@@ -31,7 +32,8 @@ const Item = () => {
       scrollTrigger:{
         scrub:3,
         trigger:'.home__card-details',
-        start:'500px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__card-details p:first-of-type',{ x:500,opacity:0 },{
@@ -40,7 +42,8 @@ const Item = () => {
       scrollTrigger:{
         scrub:3,
         trigger:'.home__card-details',
-        start:'700px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__card-details p:last-of-type',{ x:500,opacity:0 },{
@@ -49,7 +52,8 @@ const Item = () => {
       scrollTrigger:{
         scrub:3,
         trigger:'.home__card-details',
-        start:'900px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__card-text-background .home__card-item-letter',{ y:1000,opacity:0 },{
@@ -62,7 +66,8 @@ const Item = () => {
       scrollTrigger:{
         scrub:3,
         trigger:'.home__card-details',
-        start:'800px'
+        start:'-=550px',
+        end:'+=450px'
       }
     })
   }

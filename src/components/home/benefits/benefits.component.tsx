@@ -29,7 +29,8 @@ const Benefits = () => {
       scrollTrigger:{
         trigger:'.home__benefits',
         scrub:3,
-        start:'1000px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__benefits-item',{ y:150,opacity:0 },{
@@ -38,7 +39,8 @@ const Benefits = () => {
       scrollTrigger:{
         trigger:'.home__benefits',
         scrub:3,
-        start:'1000px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
   }

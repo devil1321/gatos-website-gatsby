@@ -3,7 +3,7 @@ import * as styles from '../../../styles/components/home/payments/feature.module
 import useImage from '../../../hooks/useImage'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import gsap from 'gsap'
-import { MotionPathPlugin } from 'gsap/all'
+import { MotionPathPlugin, ScrollTrigger } from 'gsap/all'
 
 const Feature = () => {
 
@@ -17,24 +17,44 @@ const Feature = () => {
 
   const handlePath = (itemClassName:string,start:number,end:number) =>{
     gsap.registerPlugin(MotionPathPlugin)
+    gsap.registerPlugin(ScrollTrigger)
     const targets = gsap.utils.toArray(".home__payments-item");
-const dur = 6;
-
-targets.forEach((obj, i) => {
-  gsap
-    .timeline({ defaults: { ease: "none" }, repeat: -1 })
-    .to(obj, {
-      duration: dur,
-      motionPath: {
-        path: "#path_payments",
-        align: "#path_payments",
-        alignOrigin: [0.5, 0.5],
-        start: 0,
-        end: 1
+    const dur = 6;
+    targets.forEach((obj, i) => {
+      gsap
+        .timeline({ defaults: { ease: "none" }, repeat: -1 })
+        .to(obj, {
+          duration: dur,
+          motionPath: {
+            path: "#path_payments",
+            align: "#path_payments",
+            alignOrigin: [0.5, 0.5],
+            start: 0,
+            end:1
+          }
+        })
+        .to(
+          obj,
+          {
+            scale: 0.7,
+            duration: dur / 2,
+            repeat: 1,
+            yoyo: true,
+            ease: "sine.inOut"
+          },
+          0
+        )
+        .progress(i * (1 / targets.length));
+    });
+    gsap.fromTo('.home__payments-feature',{opacity:0},{
+      opacity:1,
+      scrollTrigger:{
+        trigger:'.home__payments',
+        scrub:3,
+        start:'-=450px',
+        end:'+=350px'
       }
     })
-    .progress(i * (1 / targets.length));
-});
   }
 
   const handleAnimate = () =>{
@@ -50,7 +70,7 @@ targets.forEach((obj, i) => {
   },[])
 
   return (
-    <div className={styles.feature}>
+    <div className={`${styles.feature} home__payments-feature`}>
      <svg className={styles.svg} width={1000} height={1000} fill='none'>
         <path id='path_payments' d="M100,250a200,250 0 1,0 400,0a200,250 0 1,0 -400,0" />
       </svg>

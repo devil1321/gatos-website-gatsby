@@ -1,0 +1,8 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.gallery{
+    margin-top: -300px;
+    @include flex(row,center,flex-start,wrap);
+}

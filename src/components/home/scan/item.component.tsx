@@ -30,7 +30,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:3,
-        start:'-450px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__scan-item:nth-of-type(2) .home__scan-item-img',{ x:1000, opacity:0 },{ 
@@ -40,7 +41,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:nth-of-type(2)',
         scrub:3,
-        start:'-450px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo('.home__scan-item:last-of-type .home__scan-item-img',{ x:1000, opacity:0 },{ 
@@ -50,7 +52,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:last-of-type',
         scrub:3,
-        start:'-450px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
 
@@ -60,7 +63,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:3,
-        start:'-1250px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -69,7 +73,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -78,7 +83,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
@@ -91,7 +97,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:1,
-        start:'-300px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
 
@@ -102,7 +109,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:nth-of-type(2)',
         scrub:3,
-        start:'-1250px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -111,7 +119,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:nth-of-type(2)',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -120,7 +129,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:nth-of-type(2)',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
@@ -133,7 +143,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:nth-of-type(2)',
         scrub:1,
-        start:'0px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
 
@@ -145,7 +156,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:last-of-type',
         scrub:3,
-        start:'-1250px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -154,7 +166,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:last-of-type',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -163,7 +176,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:last-of-type',
         scrub:3,
-        start:'-1200px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
     gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
@@ -176,7 +190,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:last-of-type',
         scrub:1,
-        start:'500px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
   }

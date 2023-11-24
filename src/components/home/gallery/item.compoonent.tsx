@@ -1,9 +1,20 @@
 import React from 'react'
+import * as styles from '../../../styles/components/home/gallery/item.module.scss'
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
-const Item = () => {
+interface ItemProps{
+  text?:string;
+  image?:{
+    gatsbyImageData:IGatsbyImageData;
+    src:string;
+  }[];
+}
+
+const Item:React.FC<ItemProps> = ({text,image}) => {
   return (
-    <div>
-      
+    <div className={`${styles.item} home__gallery-item`}>
+      {text && <h2>{text}</h2>}
+      {image && <GatsbyImage image={image[0].gatsbyImageData} alt="gallery-image" />}
     </div>
   )
 }

@@ -22,7 +22,8 @@ const Payments = () => {
       scrollTrigger:{
         trigger:'.home__payments',
         scrub:3,
-        start:'1000px'
+        start:'-=450px',
+        end:'+=350px'
       }
     })
   }
