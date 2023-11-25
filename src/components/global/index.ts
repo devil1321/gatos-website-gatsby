@@ -1,13 +1,15 @@
 import Nav from "./nav.component";
 import Layout from "./layout.component";
 import { CardsComponents } from "./cards";
-import Faq from "./faq.component";
+import { FaqComponents } from "./faq";
+import Genius from "./genius.component";
 import Footer from "./footer.component";
 
 export const GlobalComponents = {
     Nav,
     Layout,
     CardsComponents,
-    Faq,
+    FaqComponents,
+    Genius,
     Footer
 }

@@ -1,0 +1,9 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.dot{
+    opacity: 0;
+    position: relative;
+    border-radius: 100%;
+}

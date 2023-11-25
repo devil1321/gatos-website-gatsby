@@ -1,0 +1,28 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.item{
+    cursor: pointer;
+    h2{
+        @include flex(row,space-between,center,null);
+        img{
+            width: 20px !important;
+        }
+    }
+    border-bottom: 1px solid $light-white;
+    &:last-of-type{
+        border: 0px;
+    }
+    @keyframes fadeIn {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    p{
+        animation: fadeIn 1s ease-in-out forwards;
+    }
+}

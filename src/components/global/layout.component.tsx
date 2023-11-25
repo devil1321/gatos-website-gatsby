@@ -9,7 +9,8 @@ const Layout:React.FC<{className:string; children:ReactNode}> = ({className,chil
         <GlobalComponents.Nav />
         {children}
         <GlobalComponents.CardsComponents.Cards />
-        <GlobalComponents.Faq />
+        <GlobalComponents.FaqComponents.Faq />
+        <GlobalComponents.Genius />
         <GlobalComponents.Footer />
       </div>
     </div>

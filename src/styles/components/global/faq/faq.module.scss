@@ -2,11 +2,10 @@
 @import '../../../variables';
 @import '../../../mixins';
 
-.cards{
-    margin-top: 250px;
-    @include flex(row,center,center,wrap);
-    h2{
-        width: 100%;
+.faq{
+    width: 70%;
+    margin:0px auto;
+    & > h2{
         font-size: 60px;
         text-align: center;
     }

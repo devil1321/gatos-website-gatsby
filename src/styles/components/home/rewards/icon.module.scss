@@ -1,0 +1,14 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+
+.icon{
+    opacity: 0;
+    position: relative;
+    width: 70px;
+    border-radius: 100%;
+    img{
+        width: 100%;
+    }
+}
