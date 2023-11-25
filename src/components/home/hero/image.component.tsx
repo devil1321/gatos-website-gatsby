@@ -29,14 +29,17 @@ const Image = () => {
   }
 
   useEffect(()=>{
-    setTimeout(() => {
+    setTimeout(() => { 
       handlePath('.image__item-1',0.15,0.85)
       handlePath('.image__item-2',0.60,1.35)
     }, 10);
   },[])
 
   return (
-    <div className={styles.image}>
+    <div className={styles.image} onMouseEnter={()=>{
+      handlePath('.image__item-1',1.85,2.85)
+      handlePath('.image__item-2',1.35,2.35)
+    }}>
       <svg className={styles.svg} width={400} height={400} fill='none'>
         <path id='path' d="M30,200a170,170 0 1,0 340,0a170,170 0 1,0 -340,0" />
       </svg>

@@ -21,30 +21,33 @@ const Rewards = () => {
 
     gsap.fromTo('.home__rewards-dot',{ opacity:0 },{
       opacity:1,
-      delay:1,
-      duration:1,
+      duration:0.1,
+      ease:'linear',
       stagger:{
         amount:2,
-        from:'center'
+        from:'center',
+        ease:'linear'
       },
       scrollTrigger:{
         trigger:'.home__rewards',
         start:'-=150px',
-        end:'-=0px'
+        end:'-=100px'
       }
     })
     gsap.fromTo('.home__rewards-icon',{ opacity:0 },{
       opacity:1,
-      delay:1,
-      duration:1,
+      delay:0.1,
+      duration:0.1,
+      ease:'linear',
       stagger:{
         amount:2,
-        from:'center'
+        from:'center',
+        ease:'linear'
       },
       scrollTrigger:{
         trigger:'.home__rewards',
         start:'-=150px',
-        end:'-=0px'
+        end:'-=100px'
       }
     })
   }

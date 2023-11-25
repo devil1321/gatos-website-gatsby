@@ -1,0 +1,33 @@
+@import '../../fonts';
+@import '../../variables';
+@import '../../mixins';
+
+.top_items{
+    padding:0px 0px 0px 40px;
+    border-bottom: 1px solid $light-white;
+    @include flex(row,space-between,center,null);
+    a{
+        width: 150px;
+    }
+    div{
+        width: 100px;
+        transform: translateX(-15%);
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.bottom_items{
+    @include flex(row,center,center,null);
+    a{
+        margin:20px 60px;
+    }
+}
+
+.foot{
+    p{
+        text-align: center;
+        letter-spacing: 1px;
+    }
+}

@@ -3,8 +3,9 @@
 @import '../../../mixins';
 
 .item{
-    cursor: pointer;
     h2{
+        cursor: pointer;
+        font-weight: $f-normal;
         @include flex(row,space-between,center,null);
         img{
             width: 20px !important;

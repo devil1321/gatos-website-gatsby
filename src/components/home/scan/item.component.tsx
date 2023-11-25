@@ -21,43 +21,20 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
     return [...text].map((l:string) => <span className='home__scan-item-letter'>{l}</span>)
   }
 
-  const handleAnimate = () =>{
+  const handleAnimate = (selector:string) =>{
     gsap.registerPlugin(ScrollTrigger)
-    gsap.fromTo('.home__scan-item:first-of-type .home__scan-item-img',{ x:1000, opacity:0 }, { 
+    gsap.fromTo(`${selector} .home__scan-item-img`,{ x:1000, opacity:0 }, { 
       x:0,
       opacity:1,
       duration:1,
       scrollTrigger:{
-        trigger:'.home__scan-item:first-of-type',
+        trigger:selector,
         scrub:3,
         start:'-=450px',
         end:'+=350px'
       }
     })
-    gsap.fromTo('.home__scan-item:nth-of-type(2) .home__scan-item-img',{ x:1000, opacity:0 },{ 
-      x:0,
-      opacity:1,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.home__scan-item:nth-of-type(2)',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo('.home__scan-item:last-of-type .home__scan-item-img',{ x:1000, opacity:0 },{ 
-      x:0,
-      opacity:1,
-      duration:1,
-      scrollTrigger:{
-        trigger:'.home__scan-item:last-of-type',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-
-    gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-details h2`,{ x:-1000,opacity:0 },{ 
+    gsap.fromTo(`${selector} .home__scan-item-details h2`,{ x:-1000,opacity:0 },{ 
       x:0,
       opacity:1, 
       scrollTrigger:{
@@ -67,27 +44,17 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
         end:'+=350px'
       }
     })
-    gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
+    gsap.fromTo(`${selector} .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
       x:0,
       opacity:1, 
       scrollTrigger:{
-        trigger:'.home__scan-item:first-of-type',
+        trigger:selector,
         scrub:3,
         start:'-=450px',
         end:'+=350px'
       }
     })
-    gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:first-of-type',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:first-of-type .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
+    gsap.fromTo(`${selector} .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
       x:0,
       opacity:1, 
       stagger:{
@@ -95,100 +62,7 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
         from:'start'
       },
       scrollTrigger:{
-        trigger:'.home__scan-item:first-of-type',
-        scrub:1,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-
-    
-    gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-details h2`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:nth-of-type(2)',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:nth-of-type(2)',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:nth-of-type(2)',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:nth-of-type(2) .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      stagger:{
-        amount:0.2,
-        from:'start'
-      },
-      scrollTrigger:{
-        trigger:'.home__scan-item:nth-of-type(2)',
-        scrub:1,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-
-    
-    
-    gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-details h2`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:last-of-type',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:last-of-type',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      scrollTrigger:{
-        trigger:'.home__scan-item:last-of-type',
-        scrub:3,
-        start:'-=450px',
-        end:'+=350px'
-      }
-    })
-    gsap.fromTo(`.home__scan-item:last-of-type .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
-      x:0,
-      opacity:1, 
-      stagger:{
-        amount:0.2,
-        from:'start'
-      },
-      scrollTrigger:{
-        trigger:'.home__scan-item:last-of-type',
+        trigger:selector,
         scrub:1,
         start:'-=450px',
         end:'+=350px'
@@ -198,7 +72,9 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
   
 
   useEffect(()=>{
-    handleAnimate()
+    handleAnimate('.home__scan-item:first-of-type')
+    handleAnimate('.home__scan-item:nth-of-type(2)')
+    handleAnimate('.home__scan-item:last-of-type')
   },[])
 
   return (
