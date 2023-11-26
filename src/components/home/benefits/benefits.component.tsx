@@ -54,12 +54,12 @@ const Benefits = () => {
     <div className={`${styles.benefits} home__benefits`}>
       <h2 className={`${styles.background_text} home__benefits-background-text`}>{handleText('BENEFITS')}</h2>
       <div className={styles.column}>
-        <Item image={benefits_1} text="EARN ON EVERY PAYMENT" />
-        <Item image={benefits_2} text="MANAGED EXPENSES" />
+        <Item image={benefits_1} heading="EARN ON EVERY PAYMENT" text="How do you like the sound the sound of earning money whenever you pay for something ? If you don’t believe this then we have some suprises for you." />
+        <Item image={benefits_2} heading="MANAGED EXPENSES" text="Do you also wonder about where your money is flying away? Well we have an answer for you. Record all your expenses at one place using Gastos" />
       </div>
       <div className={styles.column}>
-        <Item image={benefits_3} text="PAY LESS SAVE MORE" />
-        <Item image={benefits_4} text="WIDE RANGE OF PAYMENTS" />
+        <Item image={benefits_3} heading="PAY LESS SAVE MORE" text="Pay below the bill with and get instant discounts . Who knew saving money had no limits?" />
+        <Item image={benefits_4} heading="WIDE RANGE OF PAYMENTS" text="We cover everyone from your local chai vala to fancy restaurants ,from your nearby gym to the distant salon Choose a place and we are there for you" />
       </div>
     </div>
   )

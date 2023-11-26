@@ -11,3 +11,11 @@
         text-align: center;
     }
 }
+
+.item{
+    margin:10px;
+    width: calc(150% / 5 - 20px);
+    position: relative;
+    top:0px;
+    left:0px;
+}

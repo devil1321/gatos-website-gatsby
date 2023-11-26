@@ -8,14 +8,18 @@ interface ItemProps{
     gatsbyImageData:IGatsbyImageData,
     src:string
   }[],
+  heading:string;
   text:string;
 }
 
-const Item:React.FC<ItemProps> = ({image,text}) => {
+const Item:React.FC<ItemProps> = ({image,heading,text}) => {
   return (
     <div className={`${styles.item} home__benefits-item`}>
       {image && <GatsbyImage image={image[0].gatsbyImageData} alt="benefits-image" />}
-      <h2>{text}</h2>
+      <div className={styles.details}>
+        <h2>{heading}</h2>
+        <p>{text}</p>
+      </div>
     </div>
   )
 }
