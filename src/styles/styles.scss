@@ -25,7 +25,8 @@ body{
     overflow-x: hidden;
 }
 
-.home__hero-word{
+.home__hero-word,
+.learn-more__hero-word{
     display: inline-block;
     margin-right: 10px;
 }
@@ -33,7 +34,8 @@ body{
 .home__hero-letter,
 .home__benefits-letter,
 .home__card-item-letter,
-.home__payments-letter{
+.home__payments-letter,
+.learn-more__hero-letter{
     display: inline-block;
     position: relative;
     margin-right: 1px;

@@ -6,7 +6,7 @@ import * as styles from '../styles/pages/home.module.scss'
 
 const IndexPage: React.FC<PageProps> = () => {
   return (
-    <GlobalComponents.Layout className={styles.home}>
+    <GlobalComponents.Layout className={styles.home} cardsTitle="Reckognized">
       <HomeComponents.HeroComponents.Hero />
       <div className={styles.scan}>
         <h3>How It Works...</h3>
@@ -31,6 +31,7 @@ const IndexPage: React.FC<PageProps> = () => {
       <HomeComponents.PaymentsComponents.Payments />
       <HomeComponents.GalleryComponents.Gallery />
       <HomeComponents.RewardsComponents.Rewards />
+      <GlobalComponents.CardsComponents.Cards title="Recognized" />
     </GlobalComponents.Layout>
   )
 }

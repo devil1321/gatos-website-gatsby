@@ -3,7 +3,7 @@ import useImage from '../../../hooks/useImage'
 import Card from './card.component'
 import * as styles from '../../../styles/components/global/cards/cards.module.scss'
 
-const Cards = () => {
+const Cards:React.FC<{ title:string }> = ({title}) => {
 
   const [recognized_1,setRecognized_1] = useImage("recognized-1")
   const [recognized_2,setRecognized_2] = useImage("recognized-2")
@@ -19,7 +19,7 @@ const Cards = () => {
 
   return (
     <div className={styles.cards}>
-      <h2>Recognized</h2>
+      <h2>{title}</h2>
       <div className={styles.item}>
         <Card image={recognized_1} />
         <Card image={recognized_color_1} />

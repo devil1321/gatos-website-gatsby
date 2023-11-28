@@ -1,0 +1,32 @@
+@import '../../fonts';
+@import '../../variables';
+@import '../../mixins';
+
+.founder{
+    position: relative;
+    z-index: 3;
+    top:0px;
+    left:0px;
+    margin-bottom: 700px;
+}
+.founder_img{
+    position: absolute;
+    z-index: 4;
+    top:117px;
+    left:50%;
+    width: 30%;
+    transform: translateX(-50%);
+}
+
+.wave_1,
+.wave_2{
+    position: absolute;
+    bottom:-701px;
+    left:50%;
+    z-index: 3;
+    width: calc(100% + 240px);
+    transform: translateX(-50%);
+    img{
+        width:100%;
+    }
+}

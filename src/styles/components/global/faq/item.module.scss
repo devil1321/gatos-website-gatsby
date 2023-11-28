@@ -4,6 +4,10 @@
 
 .item{
     h2{
+        position: relative;
+        z-index: 4;
+        top:0px;
+        left:0px;
         cursor: pointer;
         font-weight: $f-normal;
         @include flex(row,space-between,center,null);

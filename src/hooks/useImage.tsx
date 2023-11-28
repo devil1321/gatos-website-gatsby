@@ -10,7 +10,7 @@ const useImage = (name:string) => {
     query {
       allImageSharp {
         nodes {
-          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           original {
             src
           }

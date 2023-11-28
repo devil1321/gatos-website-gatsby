@@ -6,6 +6,10 @@
     margin-top: 250px;
     @include flex(row,center,center,wrap);
     h2{
+        position: relative;
+        z-index: 4;
+        top:0px;
+        left:0px;
         width: 100%;
         font-size: 60px;
         text-align: center;
@@ -14,7 +18,7 @@
 
 .item{
     margin:10px;
-    width: calc(150% / 5 - 20px);
+    width: calc(130% / 5 - 20px);
     position: relative;
     top:0px;
     left:0px;

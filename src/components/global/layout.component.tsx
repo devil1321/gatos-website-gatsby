@@ -8,7 +8,6 @@ const Layout:React.FC<{className:string; children:ReactNode}> = ({className,chil
       <div className={className}>
         <GlobalComponents.Nav />
         {children}
-        <GlobalComponents.CardsComponents.Cards />
         <GlobalComponents.FaqComponents.Faq />
         <GlobalComponents.Genius />
         <GlobalComponents.Footer />
