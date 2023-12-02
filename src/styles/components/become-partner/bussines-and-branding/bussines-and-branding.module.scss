@@ -1,0 +1,9 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.bussines_and_branding{
+    margin-top: 400px;
+    margin-bottom: 100px;
+    @include flex(row,center,center,null);
+}

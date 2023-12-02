@@ -1,15 +1,15 @@
-import Hero from "./hero.component"
+import { HeroComponents } from "./hero"
 import Feature from "./feature.component"
-import BussinesAndBranding from "./bussines-and-branding.component"
+import { BussinesAndBrandingComponents } from "./bussines-and-branding"
 import { StepComponents } from "./steps"
 import { CustomersComponents } from "./customers"
 import { MarketComponents } from "./market"
 import { LocalBusinessComponents } from "./local-bussines"
 
 export const BecomePartnerComponents = {
-    Hero,
+    HeroComponents,
     Feature,
-    BussinesAndBranding,
+    BussinesAndBrandingComponents,
     StepComponents,
     CustomersComponents,
     MarketComponents,

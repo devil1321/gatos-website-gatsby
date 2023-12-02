@@ -3,10 +3,18 @@ import type { HeadFC, PageProps } from "gatsby"
 import { GlobalComponents } from "../components/global"
 import { HomeComponents } from "../components/home"
 import * as styles from '../styles/pages/home.module.scss'
+import { useEffect } from "react"
+import { handleBackground } from "../lib/handle-background"
 
 const IndexPage: React.FC<PageProps> = () => {
+
+   
+  useEffect(()=>{
+    handleBackground('#191919')
+  },[])
+
   return (
-    <GlobalComponents.Layout className={styles.home} cardsTitle="Reckognized">
+    <GlobalComponents.Layout className={styles.home}>
       <HomeComponents.HeroComponents.Hero />
       <div className={styles.scan}>
         <h3>How It Works...</h3>

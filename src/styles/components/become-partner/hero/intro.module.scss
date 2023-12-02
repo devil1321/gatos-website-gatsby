@@ -1,0 +1,17 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.intro{
+    @include flex(column,center,center,null);
+    h1{
+        text-align: center;
+        margin: 50px auto;
+        font-size: 60px;
+        width: 70%;
+    }
+    button{
+        @include button();
+        margin-bottom: 30px;
+    }
+}

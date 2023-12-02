@@ -1,0 +1,10 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.item{
+    position: absolute;
+    top:0px;
+    left:0px;
+    filter: drop-shadow(0px 0px 5px rgba($black,0.3));
+}

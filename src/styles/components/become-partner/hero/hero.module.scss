@@ -1,0 +1,31 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.hero{
+    margin-bottom: 100px;
+}
+
+.main{
+    margin-top: 430px;
+    @include flex(row,space-between,center,null);
+}
+
+.column{
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 50%;
+    &:first-of-type{
+        z-index: 2;
+    }
+    &:last-of-type{
+        top:-100px;
+        left:-5%;
+    }
+    h2{
+        font-size: 30px;
+        min-width: 800px;
+        margin-bottom: 50px;
+    }
+}
