@@ -1,0 +1,43 @@
+@import '../../../fonts';
+@import '../../../variables';
+@import '../../../mixins';
+
+.item{
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 30%;
+    text-align: center;
+    margin:0px 40px;
+    div:first-of-type{
+        margin-bottom: 30px;
+    }
+    img{
+        display: block;
+        width: 70%;
+        margin:0px auto;
+    }
+    h2,h3,p{
+        margin:10px 0px;
+    }
+}
+
+.front{
+    position: relative;
+    top:0px;
+    left:0px;
+    z-index: 2;
+}
+
+.back{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 1;
+    width: 400px;
+    transform: translateX(-10%);
+    img{
+        width:330px !important;
+    }
+}
+    
