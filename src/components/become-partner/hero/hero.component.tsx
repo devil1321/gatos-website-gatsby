@@ -30,15 +30,15 @@ const Hero = () => {
       },
       scrollTrigger:{
         trigger:'.become-parner__hero-main',
-        start:'-400px',
-        end:'-400px',
+        start:'-200px',
+        end:'-200px',
       }
     })
   }
 
   useEffect(()=>{
     handleAnimate()
-  },[])
+  })
 
   return (
     <div className={styles.hero}>

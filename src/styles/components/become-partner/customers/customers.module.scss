@@ -1,3 +1,30 @@
 @import '../../../fonts';
 @import '../../../variables';
 @import '../../../mixins';
+
+.customers{
+    margin:100px 0px;
+    position: relative;
+    top:0px;
+    left:0px;
+    & > h2{
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 50px;
+        font-weight: 100;
+    }
+}
+
+.arrow_head{
+    position: absolute;
+    right: 20%;
+    top:25%;
+    width: 70px;
+    z-index: 2;
+}
+
+.arrow_tail{
+    position: relative;
+    right:-10px;
+    top:10px;
+}

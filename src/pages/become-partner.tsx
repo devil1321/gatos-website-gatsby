@@ -14,7 +14,6 @@ const BecomePartner = () => {
   return (
     <GlobalComponents.Layout className={styles.become_partner}>
       <BecomePartnerComponents.HeroComponents.Hero />
-      <BecomePartnerComponents.Feature />
       <BecomePartnerComponents.BussinesAndBrandingComponents.BussinesAndBranding />
       <BecomePartnerComponents.StepComponents.Steps />
       <BecomePartnerComponents.CustomersComponents.Customers />

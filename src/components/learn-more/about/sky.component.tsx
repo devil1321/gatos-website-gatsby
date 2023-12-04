@@ -56,8 +56,8 @@ const Sky = () => {
       scrollTrigger:{
         trigger:'.learn-more__sky',
         scrub:3,
-        start:'100px',
-        end:'400px'
+        start:'-100px',
+        end:'400px',
       }
     })
   }

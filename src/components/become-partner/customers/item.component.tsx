@@ -4,17 +4,18 @@ import useImage from '../../../hooks/useImage'
 import { GatsbyImage } from 'gatsby-plugin-image'
 
 interface ItemProps{
+  className:string;
   img:string;
   left:string;
   top:string;
 }
 
-const Item:React.FC<ItemProps> = ({img,left,top}) => {
+const Item:React.FC<ItemProps> = ({className,img,left,top}) => {
 
   const [image,setImage] = useImage(img)
 
   return (
-    <div className={styles.item} style={{left:left,top:top}}>
+    <div className={`${styles.item} ${className}`} style={{left:left,top:top}}>
       {image && <GatsbyImage image={image[0].gatsbyImageData} alt="customers-item-img" />}
     </div>
   )
