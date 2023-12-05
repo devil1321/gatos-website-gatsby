@@ -5,9 +5,10 @@ const Buildings = () => {
 
   const [image,setImage] = useImage('circle-bg')
   const [imageCanvas,setImageCanvas] = useState<any>(null)
+  const [isLoad,setIsLoad] = useState<boolean>(false)
 
   const canvasRef = useRef() as MutableRefObject<HTMLCanvasElement>
-  const image_ctx = useRef(new Image()) as MutableRefObject<HTMLImageElement>
+  const image_ctx = useRef(null) as MutableRefObject<any>
   
   const handleDraw = () =>{
     const ctx = canvasRef.current.getContext('2d') as CanvasRenderingContext2D
@@ -32,9 +33,15 @@ const Buildings = () => {
   }
 
   useEffect(()=>{
-    handleDraw()
-    handleAnimate()
-  },[image])
+    if(typeof window !== undefined){
+      image_ctx.current = new Image()
+    }
+    if(image_ctx.current){
+      handleDraw()
+      handleAnimate()
+    }
+    setIsLoad(true)
+  },[image,isLoad])
 
   return (
     <div className={styles.buildings}>
