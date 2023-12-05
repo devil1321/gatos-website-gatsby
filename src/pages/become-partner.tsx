@@ -4,11 +4,15 @@ import { BecomePartnerComponents } from '../components/become-partner'
 import * as styles from '../styles/pages/become-partner.module.scss'
 import { handleBackground } from '../lib/handle-background'
 import { handleAnchorColor } from '../lib/handle-anchors-color'
+import gsap from 'gsap'
 const BecomePartner = () => {
  
   useEffect(()=>{
     handleBackground('white')
     handleAnchorColor('#191919')
+    gsap.config({
+      force3D:true
+    })
   },[])
 
   return (

@@ -5,12 +5,16 @@ import { HomeComponents } from "../components/home"
 import * as styles from '../styles/pages/home.module.scss'
 import { useEffect } from "react"
 import { handleBackground } from "../lib/handle-background"
+import gsap from "gsap"
 
 const IndexPage: React.FC<PageProps> = () => {
 
    
   useEffect(()=>{
     handleBackground('#191919')
+    gsap.config({
+      force3D:true
+    })
   },[])
 
   return (

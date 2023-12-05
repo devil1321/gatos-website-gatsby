@@ -54,6 +54,5 @@
     color:$light-white;
     @include breakpoint-down(small){
         transform: rotate(0deg);
-
     }
 }
