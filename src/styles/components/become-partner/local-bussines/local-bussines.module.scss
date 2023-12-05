@@ -6,6 +6,9 @@
     position: relative;
     top:0px;
     left:0px;
+    @include breakpoint-down(small){
+        display: none;
+    }
     & > h2{
         text-align: center;
         font-size: 60px;

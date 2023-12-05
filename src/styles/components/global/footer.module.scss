@@ -6,8 +6,16 @@
     padding:0px 0px 0px 40px;
     border-bottom: 1px solid $light-white;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        padding: 0px;
+        @include flex(row,space-between,center,wrap);
+    }
     a{
         width: 150px;
+        @include breakpoint-down(small){
+            min-width: fit-content;
+            margin:10px 0px;
+        }
     }
     div{
         width: 100px;
@@ -19,6 +27,9 @@
 }
 .logo{
     @include flex(row,center,center,null);
+    @include breakpoint-down(small){
+        display: none;
+    }
     div{
         width: 70px;
         div{
@@ -33,6 +44,9 @@
     @include flex(row,center,center,null);
     a{
         margin:20px 60px;
+        @include breakpoint-down(small){
+            margin: 20px;
+        }
     }
 }
 

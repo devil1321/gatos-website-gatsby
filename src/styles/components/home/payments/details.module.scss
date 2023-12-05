@@ -6,10 +6,18 @@
     margin-top: 100px;
     margin-left: 100px;
     width: 50%;
+    @include breakpoint-down(small){
+        width: 100%;
+        margin:0px;
+        margin-top:-400px;
+    }
     h2,p{
         margin:10px 0px;
     }
     p{
         width: 50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }

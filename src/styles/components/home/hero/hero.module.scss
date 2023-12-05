@@ -5,7 +5,13 @@
 .hero{
     margin-top:50px;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     div{
         width:50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }

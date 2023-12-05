@@ -8,6 +8,9 @@
     left:0px;
     margin-top: 200px;
     @include flex(row,center,flex-start,null);
+    @include breakpoint-down(small){
+        display: block;
+    }
     & > h2{
         position: absolute;
         top:0px;
@@ -15,5 +18,10 @@
         transform: rotate(90deg);
         font-size: 150px;
         color: $light-white;
+        @include breakpoint-down(small){
+            transform: rotate(90deg);
+            text-wrap: nowrap;
+            left:0px;
+        }
     }
 }

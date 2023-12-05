@@ -5,4 +5,11 @@
 .gallery{
     margin-top: -300px;
     @include flex(row,center,flex-start,wrap);
+    @include breakpoint-down(small){
+        display: block;
+        margin-top: 100px;
+        h2{
+            min-width: 100% !important;
+        }
+    }
 }

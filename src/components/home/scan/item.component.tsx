@@ -30,8 +30,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:selector,
         scrub:3,
-        start:'-=450px',
-        end:'+=350px'
+        start:'-450px',
+        end:'0px'
       }
     })
     gsap.fromTo(`${selector} .home__scan-item-details h2`,{ x:-1000,opacity:0 },{ 
@@ -40,8 +40,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:'.home__scan-item:first-of-type',
         scrub:3,
-        start:'-=450px',
-        end:'+=350px'
+        start:'-450px',
+        end:'0px'
       }
     })
     gsap.fromTo(`${selector} .home__scan-item-details p`,{ x:-1000,opacity:0 },{ 
@@ -50,8 +50,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:selector,
         scrub:3,
-        start:'-=450px',
-        end:'+=350px'
+        start:'-450px',
+        end:'0px'
       }
     })
     gsap.fromTo(`${selector} .home__scan-item-letter`,{ x:-1000,opacity:0 },{ 
@@ -64,8 +64,8 @@ const Item:React.FC<ItemProps> = ({heading,text,textBackground,imgName}) => {
       scrollTrigger:{
         trigger:selector,
         scrub:1,
-        start:'-=450px',
-        end:'+=350px'
+        start:'-450px',
+        end:'0px'
       }
     })
   }

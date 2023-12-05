@@ -9,6 +9,9 @@
         margin: 50px auto;
         font-size: 60px;
         width: 70%;
+        @include breakpoint-down(small){
+            font-size: 40px;
+        }
     }
     button{
         @include button();

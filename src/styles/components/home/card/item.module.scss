@@ -9,12 +9,19 @@
     left:0px;
     margin-top: 100px;
     @include flex(row,space-between,center,null);
+    @include breakpoint-down(small){
+        display: block;
+        margin-bottom: 300px;
+    }
 }
 .card{
     position: relative;
     left: 10%;
     top:0px;
     width: 50%;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         width: 100%;
     }
@@ -25,8 +32,15 @@
     top:0px;
     left:10%;
     z-index: 2;
+    @include breakpoint-down(small){
+        width: 100%;
+        left:0px;
+    }
     h2,p{
         width: 50%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
 }
 .text_background{
@@ -38,4 +52,8 @@
     transform: rotate(90deg);
     font-size: 150px !important;
     color:$light-white;
+    @include breakpoint-down(small){
+        transform: rotate(0deg);
+
+    }
 }

@@ -4,4 +4,7 @@
 
 .learn_more{
     padding:0px 70px;
+    @include breakpoint-down(small){
+        padding:0px 10px;
+    }
 }

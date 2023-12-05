@@ -16,6 +16,10 @@
     left:50%;
     width: 30%;
     transform: translateX(-50%);
+    @include breakpoint-down(small){
+        width: 100%;
+        top:93px;
+    }
 }
 
 .wave_1,
@@ -26,6 +30,9 @@
     z-index: 3;
     width: calc(100% + 240px);
     transform: translateX(-50%);
+    @include breakpoint-down(small){
+        bottom:-665px;
+    }
     img{
         width:100%;
     }

@@ -4,6 +4,14 @@
 
 .home{
     padding:0px 70px;
+    @include breakpoint-down(small){
+        padding:0px 10px;
+    }
+    h2{
+        @include breakpoint-down(small){
+            min-width: 100%;
+        }
+    }
 }
 
 .scan{
@@ -11,5 +19,4 @@
     h3{
         color:$light-white;
     }
-    
 }

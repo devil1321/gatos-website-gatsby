@@ -15,6 +15,9 @@
     top:0px;
     left: 0px;
     transform: rotate(90deg) translateX(-28%) rotateY(110deg) translateY(46.5%);
+    @include breakpoint-down(small){
+        transform: rotate(90deg) translateX(-28%) rotateY(110deg) translateY(46.5%) scale(0.6);
+    }
 
 }
 
@@ -25,6 +28,11 @@
     left:0px;
     width: 50%;
     margin:0px auto;
+    @include breakpoint-down(small){
+        width: 100%;
+        left:50%;
+        top:100px;
+    }
     img{
         width: 100%;
     }

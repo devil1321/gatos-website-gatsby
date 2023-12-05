@@ -5,8 +5,14 @@
 .faq{
     width: 70%;
     margin:0px auto;
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     & > h2{
         font-size: 60px;
         text-align: center;
+        @include breakpoint-down(small){
+            font-size: 40px;
+        }
     }
 }

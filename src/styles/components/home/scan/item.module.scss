@@ -8,14 +8,25 @@
     top:0px;
     left:0px;
     @include flex(row,space-between,flex-start,null);
+    @include breakpoint-down(small){
+        display: block;
+        margin-top:200px;
+    }
     h2{
         font-weight: $f-normal;
         font-size: 60px;
         margin:100px 0px 10px 150px;
+        @include breakpoint-down(small){
+            margin:0px;
+            font-size: 40px;
+        }
     }
     p{
         margin: 0px;
         margin-left:150px;
+        @include breakpoint-down(small){
+            margin:0px;
+        }
 
     }
 }
@@ -32,6 +43,11 @@
     right:10%;
     top:0px;
     width:20%;
+    @include breakpoint-down(small){
+        width: 100%;
+        margin:30px 0px;
+        right: -10%;
+    }
     img{
         width: 100%;
     }
@@ -46,4 +62,10 @@
     transform: rotate(90deg);
     font-size: 150px !important;
     color:$light-white;
+    @include breakpoint-down(small){
+        width: 5%;
+        left: 0%;
+        margin:0px auto;
+        transform: rotate(0deg) translateX(-50%);
+    }
 }

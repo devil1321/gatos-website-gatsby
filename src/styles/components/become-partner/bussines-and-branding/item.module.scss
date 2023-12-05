@@ -5,6 +5,9 @@
 .item{
     width: 40%;
     @include flex(column,center,center,null);
+    @include breakpoint-down(small){
+        width: 100%;
+    }
     img{
         display: block;
         width: 50%;
@@ -18,11 +21,17 @@
     &:first-of-type{
         p{
             width: 60%;
+            @include breakpoint-down(small){
+                width: 100%;
+            }
         }
     }
     &:last-of-type{
         p{
             width: 70%;
+            @include breakpoint-down(small){
+                width: 100%;
+            }
         }
     }
 }

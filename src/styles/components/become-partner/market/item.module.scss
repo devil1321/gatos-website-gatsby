@@ -9,6 +9,10 @@
     width: 30%;
     text-align: center;
     margin:0px 40px;
+    @include breakpoint-down(small){
+        width: 100%;
+        margin:40px auto;
+    }
     div:first-of-type{
         margin-bottom: 30px;
     }

@@ -14,7 +14,7 @@ const Details = () => {
         trigger:'.home__payments-details',
         scrub:3,
         start:'-=650px',
-        end:'+=550px'
+        end:'50px'
       }
     })
     gsap.fromTo('.home__payments-details p',{x:1000,opacity:0},{
@@ -24,7 +24,7 @@ const Details = () => {
         trigger:'.home__payments-details',
         scrub:3,
         start:'-=550px',
-        end:'+=450px'
+        end:'50px'
       }
     })
   }

@@ -8,5 +8,8 @@
     h2{
         font-size: 60px;
         text-align: center;
+        @include breakpoint-down(small){
+            font-size: 40px;
+        }
     }
 }

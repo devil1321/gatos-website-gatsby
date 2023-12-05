@@ -7,9 +7,15 @@
         width: 100%;
         font-size: 60px;
         margin:20px 0px;
+        @include breakpoint-down(small){
+            font-size: 40px;
+        }
     }
     p{
         width: 70%;
+        @include breakpoint-down(small){
+            width: 100%;
+        }
     }
     button{
         @include button();
