@@ -51,7 +51,7 @@ const Image = () => {
         </div>
       </div>
       <div className={styles.main_img}>
-        {hero && <GatsbyImage image={hero[0].gatsbyImageData} alt="hero" />}
+        {hero && <GatsbyImage image={hero[1].gatsbyImageData} alt="hero" />}
       </div>
       <div className={`${styles.item} image__item-2`}>
         {user_2 && <GatsbyImage image={user_2[0].gatsbyImageData} alt="user" />}

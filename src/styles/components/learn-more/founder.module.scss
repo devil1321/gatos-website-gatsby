@@ -12,26 +12,49 @@
 .founder_img{
     position: absolute;
     z-index: 4;
-    top:117px;
+    top:0px;
     left:50%;
     width: 30%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(20%);
+    @include breakpoint-up(xlarge){
+        transform: translateX(-50%) translateY(13%);
+        width: 20%;
+    }
+    @include breakpoint-down(medium){
+        transform: translateX(-50%) translateY(56%);
+    }
     @include breakpoint-down(small){
-        width: 100%;
-        top:93px;
+        width: 50%;
+        transform: translateX(-50%) translateY(133%);
     }
 }
+.wave_1{
+    z-index: 4;
+    transform: translateX(-50%) translateY(109%) !important;
+    @include breakpoint-down(medium){
+        transform: translateX(-50%) translateY(132%) !important;
+    }
+    @include breakpoint-down(small){
+        transform: translateX(-50%) translateY(250%) !important;
+    }
 
+}
 .wave_1,
 .wave_2{
     position: absolute;
-    bottom:-701px;
+    bottom:0px;
     left:50%;
     z-index: 3;
     width: calc(100% + 240px);
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(102%);
+    @include breakpoint-up(xlarge){
+        display: none;
+    }
+    @include breakpoint-down(medium){
+        transform: translateX(-50%) translateY(124%);
+    }
     @include breakpoint-down(small){
-        bottom:-665px;
+        transform: translateX(-50%) translateY(233%);
     }
     img{
         width:100%;

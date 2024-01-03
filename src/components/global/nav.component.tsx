@@ -12,7 +12,8 @@ const Nav:React.FC = () => {
   return (
     <div className={`${styles.nav} nav`}>
       <div className={styles.menu}>
-        <Link to="/">Become a provider</Link>
+        <Link to="/">Home</Link>
+        <Link to="/become-partner">Become a provider</Link>
         <Link to="/learn-more">Learn more</Link>
       </div>
       <div className={styles.logo}>

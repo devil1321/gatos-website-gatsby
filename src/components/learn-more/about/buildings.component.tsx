@@ -11,7 +11,7 @@ const Buildings = () => {
   const image_ctx = useRef(null) as MutableRefObject<any>
   
   const handleDraw = () =>{
-    const ctx = canvasRef.current.getContext('2d') as CanvasRenderingContext2D
+    const ctx = canvasRef.current?.getContext('2d') as CanvasRenderingContext2D
     if(image){
       image_ctx.current.src = image[1].original.src
     }

@@ -49,7 +49,7 @@ useEffect(()=>{
       </div>
       <div className={styles.column}>
         <div className={styles.img}>
-          {hero && <GatsbyImage image={hero[0].gatsbyImageData} alt="hero-image" />}
+          {hero && <GatsbyImage image={hero[1].gatsbyImageData} alt="hero-image" />}
           {play && <GatsbyImage className={styles.play} image={play[0].gatsbyImageData} alt="play-image" />}
         </div>
       </div>

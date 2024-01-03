@@ -21,8 +21,16 @@
 
 .item{
     margin:10px;
-    width: calc(130% / 5 - 20px);
+    width: calc(100% / 3 - 20px);
+    height: 250px;
     position: relative;
     top:0px;
     left:0px;
+    @include breakpoint-down(medium){
+        margin:30px;    
+        width: calc(100% / 3 - 60px);
+    }
+    @include breakpoint-down(small){
+        height: 50px;
+    }
 }

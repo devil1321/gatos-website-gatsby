@@ -18,7 +18,7 @@ const LearnMore = () => {
       <LearnMoreComponents.Hero />
       <LearnMoreComponents.AboutComponents.About />
       <LearnMoreComponents.Founder />
-      <GlobalComponents.CardsComponents.Cards title="Reckognition & Certification" />
+      <GlobalComponents.CardsComponents.Cards title="Recognition & Certification" />
     </GlobalComponents.Layout>
   )
 }

@@ -7,6 +7,7 @@
     transition: all 0.3s ease-in-out;
     &:hover{
         &:last-of-type{
+            z-index: 3;
             transform: scale(1.2);
         }
         &:first-of-type{
@@ -14,24 +15,32 @@
             opacity: 0;
         }
     }
-    &:first-of-type{
-        position: relative;
-        top:0px;
-        left:0px;
-        width: 100%;
-        z-index: 4;
-        img{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    @include breakpoint-down(small){
+        transform: translateX(-8%);
+    }
+    div{
+        width: 120%;
+        height: 100%;
+        @include breakpoint-up(xlarge){
             width: 100%;
+        }
+        img{
+            border-radius: 10px;
+            width: 100%;
+            @include breakpoint-down(small){
+                width: 100%;
+            }
         }
     }
-    &:last-of-type{
-        position: absolute;
-        top:0px;
-        left:0px;
-        width: 100%;
+    &:first-of-type{
         z-index: 3;
-        img{
-            width: 100%;
-        }
+    }
+    &:last-of-type{
+        z-index: 2;
     }
 }
