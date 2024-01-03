@@ -11,9 +11,8 @@ const Founder = () => {
 
   return (
     <div className={styles.founder}>
-      {founder && <GatsbyImage className={styles.founder_img} image={founder[0].gatsbyImageData} alt="founder" />}
-      <div className={styles.wave_1}>
-        {waves_1 && <GatsbyImage image={waves_1[0].gatsbyImageData} alt="waves-1" />}
+      <div className={styles.founder_img}>
+        {founder && <GatsbyImage image={founder[0].gatsbyImageData} alt="founder" />}
       </div>
       <div className={styles.wave_2}>
         {waves_2 && <GatsbyImage image={waves_2[0].gatsbyImageData} alt="waves-2" />}
