@@ -13,16 +13,19 @@ a{
 }
 body{
     overflow-x: hidden;
+    min-width: 100vw;
     background-color: $black;
 }
 .main-container{
     position: relative;
     top:0px;
     left:0px;
+    z-index: 10;
     font-family: $f-mulish;
     font-weight: $f-normal;
     color:white;
     overflow-x: hidden;
+    min-width: 100vw;
 }
 
 .home__hero-word,
