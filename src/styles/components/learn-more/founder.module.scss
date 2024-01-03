@@ -30,12 +30,12 @@
 }
 .wave_1{
     z-index: 4;
-    transform: translateX(-50%) translateY(109%) !important;
+    transform: translateX(-50%) translateY(9%) !important;
     @include breakpoint-down(medium){
-        transform: translateX(-50%) translateY(132%) !important;
+        transform: translateX(-50%) translateY(32%) !important;
     }
     @include breakpoint-down(small){
-        transform: translateX(-50%) translateY(250%) !important;
+        transform: translateX(-50%) translateY(150%) !important;
     }
 
 }
@@ -46,15 +46,15 @@
     left:50%;
     z-index: 3;
     width: calc(100% + 240px);
-    transform: translateX(-50%) translateY(102%);
+    transform: translateX(-50%) translateY(2%);
     @include breakpoint-up(xlarge){
         display: none;
     }
     @include breakpoint-down(medium){
-        transform: translateX(-50%) translateY(124%);
+        transform: translateX(-50%) translateY(24%);
     }
     @include breakpoint-down(small){
-        transform: translateX(-50%) translateY(233%);
+        transform: translateX(-50%) translateY(133%);
     }
     img{
         width:100%;
