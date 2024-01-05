@@ -39,6 +39,10 @@
     position: absolute;
     top:5%;
     left:-7.5%;
+    @include breakpoint-up(xlarge){
+        left:0.5%;
+        top:25%;
+    }
     @include breakpoint-down(small){
         transform: scale(0.9);
         left:-10%;
